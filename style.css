@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+*::placeholder,
+button {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+.title p {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+
+  margin: 0;
+}
