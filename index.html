@@ -18,7 +18,16 @@
       <div class="title">
         <p>What's your name?</p>
         <input type="text" required />
+        <input
+          class="hidden"
+          type="text"
+          placeholder="Set your goal here."
+          required
+        />
       </div>
+      <button onclick="settings" class="dropbtn">
+        <i class="fas fa-cog"></i>
+      </button>
     </section>
 
     <!-- Section 2. Task -->
@@ -95,12 +104,28 @@
 
     <!-- Section 3. Features -->
     <section>
-      <div class="count">Countdown</div>
-      <div class="weather">Weather</div>
-      <div class="audio">Sound of Nature</div>
-      <div class="quotes">Quotes</div>
-      <div class="background">background</div>
-      <div class="changeName">Change Name</div>
+      <div class="clock-box">
+        <h2>Clocks</h2>
+        <p>Time waits for no one.</p>
+      </div>
+
+      <div class="weather-box">
+        <h2>Weather</h2>
+        <p>After rain comes fair weather.</p>
+      </div>
+      <div class="audio-box">
+        <h2>Audio</h2>
+        <p>
+          Listen deep into nature, and then you will understand everything
+          better.
+        </p>
+      </div>
+      <div class="quotes-box">
+        <h2>Quotes</h2>
+        <p>The world is giving you answers each day. Learn to listen.</p>
+      </div>
     </section>
+
+    <footer id="footer">&copy; 2021 Jay All rights reserved.</footer>
   </body>
 </html>
