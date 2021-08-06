@@ -7,6 +7,13 @@
     <title>My Planner</title>
     <link rel="stylesheet" href="style.css" />
     <script src="src/task.js" defer></script>
+    <script src="src/audio.js" defer></script>
+    <script src="src/count.js" defer></script>
+    <script src="src/quotes.js" defer></script>
+    <script src="src/username.js" defer></script>
+    <script src="src/weather.js" defer></script>
+    <script src="src/background.js" defer></script>
+
     <script
       src="https://kit.fontawesome.com/8d0a3fd827.js"
       crossorigin="anonymous"
@@ -16,22 +23,22 @@
     <!-- Section 1. Title -->
     <section>
       <div class="title">
-        <p>What's your name?</p>
-        <input type="text" required />
-        <input
-          class="hidden"
-          type="text"
-          placeholder="Set your goal here."
-          required
-        />
+        <div id="title">My Planner</div>
+
+        <div class="setting_buttons">
+          <button class="settings rename">
+            <i class="fas fa-cog"></i>
+          </button>
+          <button class="settings background_change">
+            <i class="far fa-image"></i>
+          </button>
+        </div>
       </div>
-      <button onclick="settings" class="dropbtn">
-        <i class="fas fa-cog"></i>
-      </button>
     </section>
 
+    <div class="plans_features">
     <!-- Section 2. Task -->
-    <section>
+    <section class="my-plans">
       <div class="category">
         <h2 class="category-title">Category</h2>
         <ul class="category-list" data-list>
@@ -54,44 +61,46 @@
           <h2 class="list-title">Sample</h2>
           <p class="task-count">3 task remaining</p>
         </div>
-      </div>
 
-      <div class="todo-body">
-        <div class="tasks">
-          <div class="task">
-            <input type="checkbox" id="task-1" />
-            <label for="task-1">
-              <span class="custom-checkbox"></span>
-              Read a book
-            </label>
-          </div>
+        <div class="todo-body">
+          <div class="tasks">
+            <div class="task">
+              <input type="checkbox" id="task-1" />
+              <label for="task-1">
+                <span class="custom-checkbox"></span>
+                Read a book
+              </label>
+            </div>
 
-          <div class="task">
-            <input type="checkbox" id="task-2" />
-            <label for="task-2">
-              <span class="custom-checkbox"></span>
-              anoter task
-            </label>
-          </div>
+            <div class="task">
+              <input type="checkbox" id="task-2" />
+              <label for="task-2">
+                <span class="custom-checkbox"></span>
+                Learn foreign languages
+              </label>
+            </div>
 
-          <div class="task">
-            <input type="checkbox" id="task-3" />
-            <label for="task-3">
-              <span class="custom-checkbox"></span>
-              a third task
-            </label>
-          </div>
+            <div class="task">
+              <input type="checkbox" id="task-3" />
+              <label for="task-3">
+                <span class="custom-checkbox"></span>
+                Keep a diary
+              </label>
+            </div>
 
-          <div class="new-task-creator">
-            <form action="">
-              <input
-                type="text"
-                class="new task"
-                placeholder="new task name"
-                aria-label="new task name"
-              />
-              <button class="btn create" aria-label="create new task">+</button>
-            </form>
+            <div class="new-task-creator">
+              <form action="">
+                <input
+                  type="text"
+                  class="new task"
+                  placeholder="new task name"
+                  aria-label="new task name"
+                />
+                <button class="btn create" aria-label="create new task">
+                  +
+                </button>
+              </form>
+            </div>
           </div>
 
           <div class="delete-stuff">
@@ -103,29 +112,37 @@
     </section>
 
     <!-- Section 3. Features -->
-    <section>
+    <div class="features">
       <div class="clock-box">
         <h2>Clocks</h2>
-        <p>Time waits for no one.</p>
+        <p id="mention">Time waits for no one.</p>
+        <div class="times">
+          <div class="current-time">Current Time</div>
+          <div class="remaining-time">Time Remaing today</div>
+          <div class="until2022">Until 2022</div>
+        </div>
       </div>
 
       <div class="weather-box">
         <h2>Weather</h2>
-        <p>After rain comes fair weather.</p>
+        <p id="mention">After rain comes fair weather.</p>
       </div>
       <div class="audio-box">
         <h2>Audio</h2>
-        <p>
+        <p id="mention">
           Listen deep into nature, and then you will understand everything
           better.
         </p>
       </div>
       <div class="quotes-box">
         <h2>Quotes</h2>
-        <p>The world is giving you answers each day. Learn to listen.</p>
+        <p id="mention">
+          The world is giving you answers each day. Learn to listen.
+        </p>
       </div>
     </section>
-
-    <footer id="footer">&copy; 2021 Jay All rights reserved.</footer>
+  </div>
+  </div>
+  <footer>&copy; 2021 Jay All rights reserved</footer>
   </body>
 </html>

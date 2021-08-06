@@ -14,10 +14,61 @@ button {
   letter-spacing: 2px;
 }
 
-.title p {
+/* Section 1. TITLE */
+.title {
+  text-align: center;
+  position: relative;
+  padding: 30px;
+}
+
+.title #title {
   font-size: 2rem;
   letter-spacing: 5px;
   font-weight: 400;
+}
 
-  margin: 0;
+.title .settings {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.title .settings:hover {
+  opacity: 1;
+}
+
+.title .rename {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.title .background_change {
+  position: fixed;
+  top: 40px;
+  right: 10px;
+}
+
+.plans_features {
+  background-color: azure;
+}
+
+/* Section 2. Task */
+.my-plans {
+  display: flex;
+  justify-content: center;
+}
+
+/* Section 3. Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
