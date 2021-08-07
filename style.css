@@ -64,6 +64,12 @@ button {
   right: 10px;
 }
 
+.planner .get_weather {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+}
+
 .plans_features {
 }
 
