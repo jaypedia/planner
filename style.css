@@ -1,11 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
+:root {
+  /* Font size */
+  --font-large: 40px;
+  --font-medium: 25px;
+  --font-small: 20px;
+}
+
 body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: var(--font-small);
 }
 
 *::placeholder,
@@ -23,10 +31,11 @@ button {
   text-align: center;
   position: relative;
   padding: 30px;
+  background-color: white;
 }
 
 .planner #planner_name {
-  font-size: 2rem;
+  font-size: var(--font-large);
   letter-spacing: 5px;
   font-weight: 400;
 }
@@ -66,13 +75,39 @@ button {
 }
 
 /* Section 3. Features */
+
 .features {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 footer {
   text-align: center;
+}
+
+.clock-box {
+  width: 90%;
+}
+
+.clock-box .times {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    /* Font size */
+    --font-large: 45px;
+    --font-medium: 30px;
+    --font-small: 24px;
+  }
 }
