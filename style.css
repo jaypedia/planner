@@ -70,9 +70,6 @@ button {
   right: 10px;
 }
 
-.plans_features {
-}
-
 /* Section 2. Task */
 .my-plans {
   display: flex;
@@ -91,6 +88,8 @@ button {
 
 footer {
   text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
 }
 
 .clock-box {
@@ -102,10 +101,21 @@ footer {
   justify-content: space-evenly;
 }
 
+.clock-box p#mention {
+  margin-bottom: 0;
+}
+
 h2 {
   font-size: var(--font-medium);
   font-weight: 600;
   letter-spacing: 4px;
+  text-shadow: 2px 2px #dddddd;
+}
+
+#mention {
+  color: #dee8f6;
+  text-transform: none;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .bgImage {
@@ -113,7 +123,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 150%;
   object-fit: cover;
   z-index: -1;
   animation: fadeIn 1s ease-out;
