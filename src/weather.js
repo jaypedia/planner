@@ -18,10 +18,8 @@ function geoSuccess(position) {
     });
 }
 
-navigator.geolocation.getCurrentPosition(geoSuccess);
-
 function paintWeather() {
-  console.log('hi');
+  navigator.geolocation.getCurrentPosition(geoSuccess);
 }
 
 weatherBtn.addEventListener('click', paintWeather);
