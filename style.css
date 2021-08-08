@@ -6,6 +6,7 @@
   --font-large: 40px;
   --font-medium: 25px;
   --font-small: 20px;
+  --font-micro: 15px;
 }
 
 body {
@@ -21,6 +22,7 @@ button {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .hidden {
@@ -71,9 +73,33 @@ button {
 }
 
 /* Section 2. Task */
+li {
+  list-style: none;
+}
+
 .my-plans {
   display: flex;
   justify-content: center;
+}
+
+.my-plans .goal {
+  margin: 10px 15px;
+  padding: 10px 20px;
+}
+
+.my-plans .todo-list {
+  margin: 10px 15px;
+  padding: 10px 20px;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-stuff button.btn {
+  font-size: var(--font-micro);
 }
 
 /* Section 3. Features */
@@ -86,23 +112,22 @@ button {
   width: 100%;
 }
 
-footer {
-  text-align: center;
-  font-size: 15px;
-  opacity: 0.5;
-}
-
 .clock-box {
   width: 90%;
 }
 
 .clock-box .times {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.clock-box p#mention {
-  margin-bottom: 0;
+.clock-box .times p {
+  padding: 0 30px;
+  margin: 5px;
+}
+
+.clock-box .times p:last-child {
+  font-weight: 600;
 }
 
 h2 {
@@ -110,12 +135,14 @@ h2 {
   font-weight: 600;
   letter-spacing: 4px;
   text-shadow: 2px 2px #dddddd;
+  margin-bottom: 0;
 }
 
 #mention {
   color: #dee8f6;
   text-transform: none;
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  margin-top: 0;
 }
 
 .bgImage {
@@ -123,7 +150,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 150%;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
   animation: fadeIn 1s ease-out;
@@ -144,5 +171,9 @@ h2 {
     --font-large: 45px;
     --font-medium: 30px;
     --font-small: 24px;
+  }
+
+  .weater-audio {
+    display: flex;
   }
 }

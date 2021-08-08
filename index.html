@@ -19,7 +19,6 @@
     ></script>
   </head>
   <body>
-
     <section>
       <div class="planner">
         <div id="planner_name">My Planner</div>
@@ -28,7 +27,6 @@
           <input required maxlength="15" type="text" placeholder="Enter your name" />
         </form>
         
-
         <div class="setting_buttons">
           <button class="settings rename">
             <i class="fas fa-cog"></i>
@@ -38,116 +36,61 @@
           </button>
           <button class="settings get_weather">
             <i class="fas fa-cloud-sun"></i>
-          </button>
-          
+          </button>        
         </div>
       </div>
     </section>
 
     <div class="plans_features">
-    <!-- Section 2. Task -->
-    <section class="my-plans">
-      <div class="category">
-        <h2 class="category-title">Category</h2>
-        <ul class="category-list" data-list>
-          <li class="list-name">Sample</li>
-        </ul>
 
-        <form action="">
+    <section class="my-plans">
+      <div class="goal">
+        <h2 class="goal-title">Today's goal</h2>
+        <p></p>
+        
+        <form>
           <input
             type="text"
-            class="new category"
-            placeholder="new category name"
+            class="today-goal"
+            placeholder="Enter your goal"
             aria-label="new category name"
           />
-          <button class="btn create" aria-label="create new list">+</button>
         </form>
       </div>
 
       <div class="todo-list">
         <div class="todo-header">
-          <h2 class="list-title">Sample</h2>
-          <p class="task-count">3 task remaining</p>
+          <h2 class="list-title">My plans</h2>
         </div>
 
-        <div class="todo-body">
-          <div class="tasks">
-            <div class="task">
-              <input type="checkbox" id="task-1" />
-              <label for="task-1">
-                <span class="custom-checkbox"></span>
-                Read a book
-              </label>
-            </div>
-
-            <div class="task">
-              <input type="checkbox" id="task-2" />
-              <label for="task-2">
-                <span class="custom-checkbox"></span>
-                Learn foreign languages
-              </label>
-            </div>
-
-            <div class="task">
-              <input type="checkbox" id="task-3" />
-              <label for="task-3">
-                <span class="custom-checkbox"></span>
-                Keep a diary
-              </label>
-            </div>
-
             <div class="new-task-creator">
-              <form action="">
+              <form>
                 <input
                   type="text"
                   class="new task"
-                  placeholder="new task name"
+                  placeholder="Enter new plan"
                   aria-label="new task name"
                 />
-                <button class="btn create" aria-label="create new task">
-                  +
-                </button>
               </form>
             </div>
-          </div>
-
-          <div class="delete-stuff">
-            <button class="btn delete">Clear completed tasks</button>
-            <button class="btn delete">Delete Category</button>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Section 3. Features -->
+   
     <div class="features">
       <div class="clock-box">
-        <h2>Clocks</h2>
-        <p id="mention">"Time waits for no one."</p>
+        <h2>Time waits for no one.</h2>
         <div class="times">
           <div class="current-time">
-            <p>Current Time</p>
+            <p id="mention">Current Time</p>
             <p>00:00:00</p>
           </div>
           <div class="remaining-time">
-            <p>Time Remaing today</p>
+            <p id="mention">Time Remaing today</p>
             <p>00:00:00</p>
           </div>
         </div>
-      </div>
-
-      <div class="weather-box">
-        <h2>Weather</h2>
-        <p id="mention">"After rain comes fair weather."</p>
-        <p></p>
-      </div>
-      <div class="audio-box">
-        <h2>Audio</h2>
-        <p id="mention">
-          "Listen deep into nature, and then you will understand everything
-          better."
-        </p>
-        <audio controls loop src="/audio/nature.mp3">Your browser does not support the audio element.</audio>
       </div>
       <div class="quotes-box">
         <h2>Quotes</h2>
@@ -156,9 +99,24 @@
         </p>
         <p></p>
       </div>
+
+      <div class="weater-audio">
+      <div class="weather-box">
+        <h2>Weather</h2>
+        <p id="mention">"After rain comes fair weather."</p>
+        <p>City / Weather / Temperature / Humidity</p>
+      </div>
+      <div class="audio-box">
+        <h2>Sound of nature</h2>
+        <p id="mention">
+          "Listen deep into nature, and then you will understand everything
+          better."
+        </p>
+        <audio controls loop src="/audio/nature.mp3">Your browser does not support the audio element.</audio>
+      </div>
+    </div>
     </section>
   </div>
   </div>
-  <footer>&copy; 2021 Jay All rights reserved</footer>
   </body>
 </html>

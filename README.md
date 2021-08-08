@@ -1,8 +1,8 @@
-# planner
+# My Planner
 # Features
 * Todo List
-* Custom name
-* Countdown 
+* Username
+* Clocks
 * Audio
 * Weather
 * Quotes
