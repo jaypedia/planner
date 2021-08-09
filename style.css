@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 :root {
-  /* Font size */
   --font-large: 40px;
   --font-medium: 25px;
   --font-small: 20px;
@@ -15,6 +14,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: var(--font-small);
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px #dddddd;
+  margin-bottom: 0;
 }
 
 *::placeholder,
@@ -34,6 +41,7 @@ input {
   display: none;
 }
 
+/* Section 1. Title */
 .planner {
   text-align: center;
   position: relative;
@@ -79,7 +87,7 @@ input {
   right: 10px;
 }
 
-/* Section 2. Task */
+/* Section 2. Plan */
 li {
   list-style: none;
 }
@@ -90,14 +98,12 @@ li {
   align-items: center;
 }
 
-h2.goal-title {
-  margin-right: 10px;
-}
-
-input.today-goal {
+input.today-goal,
+input.today-plan {
   font-size: var(--font-small);
   width: 100%;
   margin-top: 20px;
+  margin-left: 15px;
 }
 
 .my-plans .goal {
@@ -107,23 +113,17 @@ input.today-goal {
   text-align: center;
 }
 
-.my-plans .todo-list {
+.my-plans .plan-list {
   margin: 10px 15px;
   padding: 10px 20px;
 }
 
-.todo-header {
+.plan-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.delete-stuff button.btn {
-  font-size: var(--font-micro);
 }
 
 /* Section 3. Features */
-
 .features {
   display: flex;
   flex-direction: column;
@@ -150,14 +150,6 @@ input.today-goal {
   font-weight: 600;
 }
 
-h2 {
-  font-size: var(--font-medium);
-  font-weight: 600;
-  letter-spacing: 4px;
-  text-shadow: 2px 2px #dddddd;
-  margin-bottom: 0;
-}
-
 #mention {
   color: #dee8f6;
   text-transform: none;
@@ -171,7 +163,6 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: -1;
   animation: fadeIn 1s ease-out;
 }

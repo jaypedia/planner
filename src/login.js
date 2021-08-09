@@ -4,13 +4,13 @@ const loginInput = document.querySelector('#login-form input');
 const title = document.querySelector('title');
 const planner_name = document.querySelector('#planner_name');
 
-const HIDDEN_CLASSNAME = 'hidden';
+const HIDDEN_CLASSNAME2 = 'hidden';
 const USERNAME_KEY = 'username';
 
 function handleClickBtn() {
   const check = confirm('Do you want to set/reset your name?');
   if (check === true) {
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME2);
   }
 }
 
@@ -26,7 +26,7 @@ function resetName(event) {
 function paintUsername(username) {
   title.innerText = `${username}'s Planner`;
   planner_name.innerText = `${username}'s Planner`;
-  loginForm.classList.add(HIDDEN_CLASSNAME);
+  loginForm.classList.add(HIDDEN_CLASSNAME2);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
