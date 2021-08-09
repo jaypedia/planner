@@ -25,6 +25,11 @@ button {
   cursor: pointer;
 }
 
+input {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+}
+
 .hidden {
   display: none;
 }
@@ -42,7 +47,8 @@ button {
   font-weight: 400;
 }
 
-.planner .settings {
+.planner .settings,
+.my-plans button {
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -50,7 +56,8 @@ button {
   opacity: 0.5;
 }
 
-.planner .settings:hover {
+.planner .settings:hover,
+.my-plans button:hover {
   opacity: 1;
 }
 
@@ -79,12 +86,25 @@ li {
 
 .my-plans {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2.goal-title {
+  margin-right: 10px;
+}
+
+input.today-goal {
+  font-size: var(--font-small);
+  width: 100%;
+  margin-top: 20px;
 }
 
 .my-plans .goal {
-  margin: 10px 15px;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .my-plans .todo-list {

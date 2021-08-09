@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Planner</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="src/task.js" defer></script>
+    <script src="src/plan.js" defer></script>
+    <script src="src/goal.js" defer></script>
     <script src="src/clock.js" defer></script>
     <script src="src/quote.js" defer></script>
     <script src="src/login.js" defer></script>
@@ -45,17 +46,18 @@
 
     <section class="my-plans">
       <div class="goal">
-        <h2 class="goal-title">Today's goal</h2>
-        <p></p>
+        <h2 class="goal-title">Today's goal :</h2>
+        <h2></h2>
         
         <form>
           <input
             type="text"
             class="today-goal"
             placeholder="Enter your goal"
-            aria-label="new category name"
+            required
           />
         </form>
+        <button class="hidden"><i class="fas fa-undo"></i></button>        
       </div>
 
       <div class="todo-list">
